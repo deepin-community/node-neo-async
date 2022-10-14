@@ -1,0 +1,13 @@
+Replace aigle with promise
+
+--- a/gulp/util.js
++++ b/gulp/util.js
+@@ -3,7 +3,7 @@
+ const cp = require('child_process');
+ 
+ const _ = require('lodash');
+-const Aigle = require('aigle');
++const Aigle = require('promise');
+ 
+ module.exports = { exec, spawn };
+ 

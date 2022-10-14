@@ -1,0 +1,22 @@
+Skip publishing to npmjs.com
+
+--- a/gulp/tasks/npm.js
++++ b/gulp/tasks/npm.js
+@@ -13,10 +13,6 @@
+ gulp.task('npm:publish', publish);
+ 
+ async function publish() {
+-  const { otp } = argv;
+-  if (!otp) {
+-    throw new Error('Invalid otp');
+-  }
+   const rootpath = path.resolve(__dirname, '../..');
+   const buildpath = path.resolve(rootpath, 'build');
+ 
+@@ -52,5 +48,5 @@
+     fs.writeFileSync(path.resolve(buildpath, `${key}.js`), file, 'utf8');
+   });
+ 
+-  await exec(`cd ${buildpath} && npm publish --otp=${otp}`);
++//  await exec(`cd ${buildpath} && npm publish --otp=${otp}`);
+ }

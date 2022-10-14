@@ -1,0 +1,2 @@
+# gulp failure can be ignored
+gulp --gulpfile gulp/tasks/npm.js npm:publish

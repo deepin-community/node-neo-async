@@ -1,0 +1,2 @@
+# false positive
+node-neo-async source: source-is-missing asyncro/docs/assets/anchor.js line length is 1886 characters (>512)

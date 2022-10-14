@@ -1,0 +1,5 @@
+# drop-in replacement for async
+node-neo-async: embedded-javascript-library usr/share/nodejs/neo-async/dist/async.js please use libjs-async
+node-neo-async: embedded-javascript-library usr/share/nodejs/neo-async/dist/async.min.js please use libjs-async
+node-neo-async: embedded-javascript-library usr/share/nodejs/neo-async/lib/async.js please use libjs-async
+node-neo-async: embedded-javascript-library usr/share/nodejs/neo-async/lib/async.min.js please use libjs-async

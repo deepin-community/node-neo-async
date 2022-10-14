@@ -1,0 +1,37 @@
+Source: node-neo-async
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , gulp
+ , node-fs-extra
+ , node-lodash
+ , node-promise
+ , node-require-dir
+ , dh-sequence-nodejs
+ , rollup
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-neo-async
+Vcs-Git: https://salsa.debian.org/js-team/node-neo-async.git
+Homepage: https://github.com/suguru03/neo-async
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-neo-async
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Provides: ${nodejs:Provides}
+Description: faster replacement for Async
+ Neo-Async is thought to be used as a drop-in replacement for Async, it almosti
+ fully covers its functionality and runs faster.
+ .
+ Async is a utility module which provides straight-forward, powerful
+ functions for working with asynchronous Javascript. Although originally
+ designed for use with Node, it can also be used directly in the
+ browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.
