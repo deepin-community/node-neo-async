@@ -1,1 +1,8 @@
-.pc/
+node_modules
+npm-debug.log
+coverage
+doc
+build
+compiler.jar
+
+.idea
